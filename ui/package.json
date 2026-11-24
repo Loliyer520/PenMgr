@@ -1,0 +1,28 @@
+{
+  "name": "笔阵管理",
+  "appid": "8001687764241356",
+  "version": "1.0.2",
+  "description": "词典笔设备管理：在线设备列表 / 远程屏幕 / 远程摄像头",
+  "quickjs": {
+    "version": "20200705",
+    "bigNum": false
+  },
+  "single-js-bundle": false,
+  "scripts": {
+    "patch:toolchain": "node ../tools/patch_aiot_toolchain.js",
+    "build:prod": "npm run patch:toolchain && node ../tools/with_generated_version.js aiot-cli -c -q -p"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.5.17",
+    "aiot-vue-cli": "^1.0.32",
+    "vue": "^3.5.17"
+  },
+  "dependencies": {
+    "falcon-ui": "^2.0.2"
+  },
+  "engines": {
+    "node": "18.20.x",
+    "npm": ">=9"
+  },
+  "packageManager": "npm@9.2.0"
+}

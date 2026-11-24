@@ -1,0 +1,13 @@
+node_modules/
+.falcon_/
+*.amr
+*.log
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
